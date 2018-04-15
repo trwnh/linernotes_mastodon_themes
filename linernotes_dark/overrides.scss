@@ -21,17 +21,17 @@ MISC TWEAKS
 DEFINE COLOR PALETTE
 ------------------*/
 
-/* midnight blue */
-:root {
-    --bgPage: rgb(42,38,37);
-    --bg: rgb(26,21,21);
-    --bgHead: rgb(255,122,23);
-    --text: rgb(225,225,225);
-    --textBold: #fff;
-    --textMuted: rgb(153,157,156);
-    --textHead: var(--textBold);
-    --accent: rgb(3, 180, 0);
-} 
+/* linernotes dark */
+
+$bgPage: rgb(42,38,37);
+$bg: rgb(26,21,21);
+$bgHead: rgb(255,122,23);
+$text: rgb(225,225,225);
+$textBold: #fff;
+$textMuted: rgb(153,157,156);
+$textHead: var(--textBold);
+$accent: rgb(3, 180, 0);
+
 
 /*----------
 TEXT STYLING
@@ -43,7 +43,7 @@ body,
 .column-link,
 .dropdown-menu, .dropdown-menu__item a,
 .status__content__spoiler-link:hover {
-    color: var(--text)
+    color: $text
 }
 
 .account__display-name strong, .notification__display-name:hover,
@@ -62,7 +62,7 @@ body,
 .activity-stream .status.light .status__content,
 .regeneration-indicator__label strong,
 .privacy-dropdown.active .icon-button.active.inverted {
-    color: var(--textBold)
+    color: $textBold
 }
 
 .notification__message, .status__prepend, .status__relative-time,
@@ -81,7 +81,7 @@ body,
 .empty-column-indicator, .error-column, .column-subheading,
 .regeneration-indicator, .nothing-here, .account__disclaimer,
 .attachment-list__list a, .attachment-list.compact .fa {
-    color: var(--textMuted)
+    color: $textMuted
 }
 
 .reply-indicator__content a,
@@ -96,7 +96,7 @@ body,
 .account__action-bar-dropdown .icon-button:hover,
 .icon-button.inverted:active, .icon-button.inverted:focus, .icon-button.inverted:hover,
 .text-icon-button:active, .text-icon-button:focus, .text-icon-button:hover {
-    color: var(--accent)
+    color: $accent
 }
 
 .column-header, .column-back-button,
@@ -108,11 +108,11 @@ body,
 .setting-text, .setting-meta__label, .setting-toggle__label,
 .setting-text:active, .setting-text:focus,
 .status__content__spoiler-link {
-    color: var(--textHead)
+    color: $textHead
 }
 
 .icon-button.disabled:hover {
-    color: var(--bg)
+    color: $bg
 }
 
 /*---------
@@ -132,7 +132,7 @@ BACKGROUNDS
 .detailed-status, .detailed-status__action-bar,
 .activity-stream .entry, .activity-stream-tabs,
 .regeneration-indicator {
-    background: var(--bg);
+    background: $bg;
 }
 
 body, body.app-body, .status.status-direct,
@@ -146,7 +146,7 @@ body, body.app-body, .status.status-direct,
 .focusable:focus .detailed-status__action-bar,
 .status__content .status__content__spoiler-link:hover,
 .accounts-grid {
-    background: var(--bgPage)
+    background: $bgPage
 }
 
 .column-header,
@@ -160,7 +160,7 @@ body, body.app-body, .status.status-direct,
 .status__content .status__content__spoiler-link,
 .list-editor h4,
 .keyboard-shortcuts kbd {
-    background: var(--bgHead)
+    background: $bgHead
 }
 
 .compose-form__publish .button,
@@ -173,7 +173,7 @@ body, body.app-body, .status.status-direct,
 .privacy-dropdown__option.active:hover,
 .privacy-dropdown.active .privacy-dropdown__value.active,
 .privacy-dropdown.active .privacy-dropdown__value {
-    background: var(--accent)
+    background: $accent
 }
 
 .ui, .drawer__inner, .drawer__inner__mastodon {
@@ -239,7 +239,7 @@ make transparent images actually transparent in media modals
 fix glowing elements when there are new toots to be fetched
 */
 .column-header.active .column-header__icon {
-    text-shadow: 0 0 10px var(--accent);
+    text-shadow: 0 0 10px $accent;
 }
 
 .column-header.active {
@@ -247,14 +247,14 @@ fix glowing elements when there are new toots to be fetched
 }
 
 .column-header__wrapper.active:before {
-    background: radial-gradient(ellipse, var(--accent) 0, rgba(0,0,0,0) 60%);
+    background: radial-gradient(ellipse, $accent 0, rgba(0,0,0,0) 60%);
 }
 
 /*-------------------------------------------------------------------
 add a splash of header color to the tiny separators in search results
 */
 
-.search-results__section h5::before {border-top: 1px solid var(--bgHead)}
+.search-results__section h5::before {border-top: 1px solid $bgHead}
 
 /* --------------------------------------------
 * various tweaks related to making account view
@@ -263,7 +263,7 @@ add a splash of header color to the tiny separators in search results
 
 /* recolors */
 .account__header {
-    background: var(--bgHead)
+    background: $bgHead
 }
 
 .account__header>div {
@@ -271,19 +271,19 @@ add a splash of header color to the tiny separators in search results
 }
 
 .account__action-bar {
-    background: var(--bg)
+    background: $bg
 }
 
 .account__section-headline {
-    background: var(--bgPage)
+    background: $bgPage
 }
 
 .account__section-headline a.active::after, .account__section-headline a.active::before {
-    border-color: transparent transparent var(--bg)
+    border-color: transparent transparent $bg
 }
 
 .account__header__content a {
-    color: var(--accent)
+    color: $accent
 }
 
 /* padded background around @handle */
