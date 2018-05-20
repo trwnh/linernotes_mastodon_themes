@@ -261,6 +261,19 @@ add a splash of header color to the tiny separators in search results
 * look a bit better
 */
 
+/* profile fields - styled separately because i'm not final on the transparent look */
+.account__header .account__header__fields dt,
+.account__header .account__header__fields dd
+{background: rgba(0,0,0,0.5);}
+
+.account__header .account__header__fields dd
+{color: var(--textBold);}
+.account__header .account__header__fields dt
+{color: var(--textMuted); font-family: sans-serif; font-weight: 700 !important;}
+
+/* fix weird tiling issue due to new "fields" feature in 2.4.0 */
+.account__header {background-size: cover !important;}
+
 /* recolors */
 .account__header {
     background: $bgHead
