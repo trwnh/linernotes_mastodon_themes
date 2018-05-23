@@ -18,9 +18,9 @@ quoted from https://github.com/skiant/mastodon-light-theme with some names chang
 ## Extensions
 it's still mostly dedicated to linernotes.club but i've since made a few changes to make this more modular in case anyone else wants a custom theme based on mastodonFlat? the basic structure of the theme is something like this:
 - themeName.scss = contains import statements for all base mastodon styles, with the following imports in order:
-  - themeName/palette.scss
-  - mastodon_flat_css/mastodonFlat.scss
-  - themeName/overrides.scss
+  - themeName/palette.scss -- defines color palette to be used by mfc base theme
+  - mastodon_flat_css/mastodonFlat.scss -- applies mfc base theme using palette
+  - themeName/overrides.scss -- misc tweaks on top of mfc
 
 ## Additional notes
 Mostly based on https://github.com/trwnh/mastodon-flat-css
