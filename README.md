@@ -1,3 +1,7 @@
+# Superseded by https://github.com/trwnh/mastomods
+
+---
+
 # Linernotes.club Mastodon Themes
 Some themes commissioned for [linernotes.club](linernotes.club).
 
